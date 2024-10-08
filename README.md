@@ -18,12 +18,12 @@ Format the lyrics of the song in a file (let's call it `lyrics.txt`) as describe
 
 Run `mklyrics` (see README of `mklyrics` for detailed usage):
 
-   python mklyrics.py -l lyrics.txt -m song.mp3 -s 0 -o lyrics.xml 
+    python mklyrics.py -l lyrics.txt -m song.mp3 -s 0 -o lyrics.xml 
 
 If you mess up at some point (let us say after ~x seconds), save your progress (`s`), and quit (`q`), and then edit your lyric file by removing the sections, 
 you already synchronized correctly. Save it to `lyrics-starting-from-x.txt` and start again with
 
-   python mklyrics.py -l lyrics-starting-from-x.txt -m song.mp3 -s x -o lyrics-starting-from-x.xml 
+    python mklyrics.py -l lyrics-starting-from-x.txt -m song.mp3 -s x -o lyrics-starting-from-x.xml 
 
 This will start the song at x seconds. You probably want to take a value of x, that is slightly before the paragraph you messed up.
 The XML files won't get merged automatically, you need to copy over the ` <block> ` tags manually.
@@ -59,7 +59,7 @@ Colors are all in html/hex notation (e.g. #000000 for black)
 
 Now you can run `mkcdg`, to get your CDG file:
 
-   ./mkcdg lyrics.xml song.cdg
+    ./mkcdg lyrics.xml song.cdg
 
 ### Playback
 
