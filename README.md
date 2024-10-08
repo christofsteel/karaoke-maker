@@ -66,3 +66,11 @@ Now you can run `mkcdg`, to get your CDG file:
 You can use `mpv` to play back the CDG files. If you use `--scale=oversample` as an option, you get that nice blocky rendering for CDG files:
 
     mpv song.cdg --audio-file=instrumental.mp3 --scale=oversample
+
+### Render proper video file
+
+You can use `ffmpeg` to convert the cdg+mp3 file to a proper video file
+
+    ffmpeg -i song.cdg -i instrumental.mp3 -vf scale=1440:1080:flags=neighbor -r 60 song.mkv
+
+This will keep the nice blocky rendering :)
