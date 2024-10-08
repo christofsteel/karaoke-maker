@@ -4,7 +4,7 @@ Generate timed xml lyric files, synchronized to a music file.
 
 ## Installation
 
-You need to have `mpg123` installed and in your path, otherwise just install packages in `requirements.txt`.
+You need to have `mpg123` installed and in your path. Additionally install all packages in `requirements.txt`.
 
 
 ## Input
@@ -44,5 +44,7 @@ shortly before you had a synchronization error.
 
 **Note:** Files are not automatically merged, they are simply overwritten. If you had an error previously, save the next run to a different xml file
 and merge the two files my hand.
+
+**Note 2**, `mklyrics` does not end after the last paragraph... just save (`s`) and quit (`q`) manually...
 
 
