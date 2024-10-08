@@ -9,8 +9,8 @@ Rendering is in part based on the [Karaoke Lyric Editor](https://github.com/gyun
 
 This needs the Fontconfig library (and development headers).
 
-   cmake .
-   make
+    cmake .
+    make
 
 This creates the `mkcdg` binary
 
